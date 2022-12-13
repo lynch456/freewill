@@ -1276,7 +1276,7 @@
     transition: all 0.5s ease-in-out;
   }
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .text-over {
     display: none;
   }
