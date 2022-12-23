@@ -34,12 +34,14 @@ const closeMenu = document.getElementById("close-btn");
 const menu = document.querySelector("nav");
 allMenu.addEventListener("click", () => {
   document.body.classList.add("open");
+  document.body.style.overflowY = "hidden";
   allMenu.style.visibility = "hidden";
   closeMenu.style.display = "block";
 });
 
 closeMenu.addEventListener("click", () => {
   document.body.classList.remove("open");
+  document.body.style.overflowY = "auto";
   allMenu.style.visibility = "visible";
   closeMenu.style.display = "none";
 });
